@@ -394,13 +394,13 @@ i {
 /* Responsive design */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
+    flex-direction: row;
   }
   nav ul {
-    flex-direction: column;
+    flex-direction: row;
   }
   nav li {
-    margin-right: 0;
+    margin-right: 10px;
     margin-bottom: 10px;
   }
   section li {
@@ -413,16 +413,16 @@ i {
   .skill-bars {
     transform: scale(0.8);
     float: inline-start;
-    max-width: 390px;
+    max-width: 300px;
   }
 
   #skills h2 {
-    max-width: calc(100% - 140px);
+    max-width: calc(100% - 100px);
   }
   
   #work img {
-    max-width: fit-content;
-    max-height: fit-content;
+    max-width:200px;
+    max-height: 200px;
   }
 
   #about img {
@@ -432,6 +432,14 @@ i {
   }
 
   .arrow {
-    top: 700px;
+    top: 600px;
+  }
+
+  .title {
+    text-align: center;
+    }
+  
+  .title-text {
+    margin: 0 0px;
   }
 }
