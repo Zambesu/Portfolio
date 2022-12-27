@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="hidden">
+      <nav>
+        <ul id="navbar">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section class="title">
+            <main class="title">
+                <div class="title-text">
+                  <h1>Hi, I'm <span class="highlight">Mateus</span>, and I'm a <br><span class="highlight">full-stack</span> developer</h1>
+              <h2>I specialize in building modern and user-friendly websites and applications</h2>              
+            </section>
+            <div class="arrow">
+              <a href="#about" class="scroll">&#9660;</a>
+            </div>            
+      <section id="about">
+        <h2>About Me</h2>
+        <img class="round-image", src="me.png" alt="A picture of me">
+        <p>Hello and welcome to my portfolio! My name is Mateus and I am a fullstack developer. Although I am just starting out in my career, I am passionate about building innovative and user-friendly websites and applications.
+            I have been teaching myself programming for the past few years and have a strong foundation in languages such as HTML, CSS, C, JavaScript, and Python. I am constantly learning and improving my skills, and I am always excited to take on new challenges and projects. 
+            As a self-taught programmer, I have had to be resourceful and driven in my learning journey. I have a strong work ethic and am committed to delivering high-quality work.
+            I am excited to start my career as a fullstack developer and am eager to take on new opportunities and projects. Thank you for visiting my portfolio. If you have any questions or opportunities for collaboration, please don't hesitate to reach out.</p>
+        <p>
+        </p>
+      </section>
+      <section id ="skills">
+        <h2>My Skills</h2>
+        <div class="skill-bars">
+          <div class="bar">
+            <div class="info">
+              <span>HTML</span>
+            </div>
+            <div class="progress-line html">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>CSS</span>
+            </div>
+            <div class="progress-line css">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>JavaScript</span>
+            </div>
+            <div class="progress-line javascript">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>Python</span>
+            </div>
+            <div class="progress-line python">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>MySQL</span>
+            </div>
+            <div class="progress-line mysql">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <img class="skillimg", src="bcoding.png" alt="bcoding">      
+      </section>
+      <section id="work">
+        <h2>My Work</h2>
+        <ul>
+          <li>
+            <h3>PySnake</h3>
+            <img src=pysnake.jpeg alt = PySnake>
+            <p>The classical Snake Game, made in Python</p>
+            <a href="https://github.com/Zambesu/Snake-in-Pygame">View project</a>
+          </li>
+          <li>
+            <h3>PySpace Invaders</h3>
+            <img src = space_inv.png alt = PySpace>
+            <p>A Space shooter game, made in python</p>
+            <a href="https://github.com/Zambesu/space_invaders">View project</a>
+          </li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Get in Touch</h2>
+        <a href="https://api.whatsapp.com/send?phone=5565981150648">
+            <i class="fab fa-whatsapp" style="display: inline-block; padding:8px; border-radius: 8px; background-color: #25D366; color: #fff; text-decoration: none; font-size: 16px;"></i>
+          </a>
+        <a href="https://www.linkedin.com/in/mateus-rodrigues-4b6543179/">
+            <i class="fab fa-linkedin" style="display: inline-block; padding:8px; border-radius: 8px; background-color: #2585d3; color: #fff; text-decoration: none; font-size: 16px;"></i>
+          </a>
+          <a href="https://github.com/Zambesu">
+            <i class="fab fa-github" style="display: inline-block; padding:8px; border-radius: 8px; background-color: #3e3d47; color: #fff; text-decoration: none; font-size: 16px;"></i>
+          </a>
+          <a href="https://www.fiverr.com/zambesu?up_rollout=true">
+            <i class="fab fa-fonticons" style="display: inline-block; padding:8px; border-radius: 8px; background-color: #5ba524; color: #fff; text-decoration: none; font-size: 16px;"></i>
+          </a>                  
+    </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2022 Mateus Rodrigues</p>
+    </footer>
+    <script>
+      const header = document.querySelector('header');
+      let isHeaderHidden = true;
+      let lastScrollY = 0;
+      window.addEventListener('scroll', () => {
+        console.log('scroll event detected');
+        const scrollY = window.scrollY;    
+        if (scrollY > lastScrollY && !isHeaderHidden) {
+          console.log('hiding header');
+          header.classList.add('hidden');
+          header.classList.remove('visible');
+          isHeaderHidden = true;
+        }
+        else if (scrollY < lastScrollY && isHeaderHidden) {
+          console.log('showing header');
+          header.classList.add('visible');
+          header.classList.remove('hidden');
+          isHeaderHidden = false;
+        }
+        lastScrollY = scrollY;
+      });
+    </script>    
+  </body>
+</html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
