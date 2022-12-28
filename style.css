@@ -322,10 +322,10 @@ i {
   animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
 }
 .bar .progress-line.html span{
-  width: 70%;
+  width: 80%;
 }
 .bar .progress-line.css span{
-  width: 50%;
+  width: 75%;
 }
 .bar .progress-line.javascript span{
   width: 65%;
@@ -335,6 +335,9 @@ i {
 }
 .bar .progress-line.mysql span{
   width: 75%;
+}
+.bar .progress-line.spreadsheets span{
+  width: 80%;
 }
 .progress-line span::before{
   position: absolute;
@@ -382,6 +385,9 @@ i {
 }
 .progress-line.mysql span::after{
   content: "75%";
+}
+.progress-line.spreadsheets span::after{
+  content: "80%";
 }
 
 #skills h2 {
@@ -485,7 +491,6 @@ i {
     max-height: 220px;
     float: none;
   }
-
 }
 
 /* Galaxy S8 */
@@ -575,12 +580,128 @@ i {
     max-height: 300px;
     float: none;
   }
+  @media (min-width: 415px) and (max-width: 540px) {
+    .skill-bars{
+      max-width: 300px;
+    }
+  }
 
 }
 
+/*Intermediate*/
+
+@media (min-width: 542) and (max-width: 767) {
+  .skillimg {
+    transform: scale(0.8);
+  }
+
+  #skills h2 {
+    max-width: calc(100% - 00px);
+    text-align: center;
+    left:50%;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 580px) {
+  .skill-bars{
+    max-width: 420px;
+    transform: scale(0.8);
+  }
+}
+@media (min-width: 581px) and (max-width: 650px) {
+  .skill-bars{
+    max-width: 450px;
+    transform: scale(0.8);
+  }
+}
+@media (min-width: 651px) and (max-width: 720px) {
+  .skill-bars{
+    max-width: 520px;
+    transform: scale(0.8);
+  }
+}
+@media (min-width: 721px) and (max-width: 767px) {
+  .skill-bars{
+    max-width: 560px;
+    transform: scale(0.8);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 806px) {
+  .skill-bars{
+    max-width: 270px;
+    transform: scale(0.8);
+  }
+
+  .skillimg {
+    transform: scale(0.8);
+    float: left;
+  }
+
+  #skills h2 {
+    max-width: calc(100% - 00px);
+    text-align: center;
+    left:50%;
+  }
+}
+@media (min-width: 821px) and (max-width: 837px) {
+  .skill-bars{
+    max-width: 310px;
+    transform: scale(0.8);
+  }
+
+  .skillimg {
+    transform: scale(0.8);
+    float: left;
+  }
+
+  #skills h2 {
+    max-width: calc(100% - 00px);
+    text-align: center;
+    left:50%;
+  }
+
+  #work img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+@media (min-width: 913px) and (max-width: 987px) {
+  .skill-bars{
+    max-width: 390px;
+    transform: scale(0.8);
+  }
+
+  .skillimg {
+    transform: scale(0.8);
+    float: left;
+  }
+
+  #skills h2 {
+    max-width: calc(100% - 00px);
+    text-align: center;
+    left:50%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1174px) {
+  .skill-bars{
+    max-width: 480px;
+  }
+
+  .skillimg {
+    float: left;
+  }
+
+  #skills h2 {
+    max-width: calc(100% - 00px);
+    text-align: center;
+    left:50%;
+  }
+}
 /*Ipad Mini*/
 
-@media (min-width: 541px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 768px) {
   .skill-bars{
     max-width: 274px;
     transform: scale(0.8);
@@ -605,9 +726,9 @@ i {
 
 /*Ipad Air*/
 
-@media (min-width: 769px) and (max-width: 820px) {
+@media (min-width: 807px) and (max-width: 820px) {
   .skill-bars{
-    max-width: 315px;
+    max-width: 305px;
     transform: scale(0.8);
   }
 
@@ -630,7 +751,7 @@ i {
 
 /*Surface Pro 7*/
 
-@media (min-width: 821px) and (max-width: 912px) {
+@media (min-width: 838px) and (max-width: 912px) {
   .skill-bars{
     max-width: 330px;
     transform: scale(0.8);
@@ -645,11 +766,15 @@ i {
     text-align: center;
     left:50%;
   }
+  #work img {
+    max-width: 320px;
+    max-height: 320px;
+  }
 }
 
 /*Nest Hub*/
 
-@media (min-width: 913px) and (max-width: 1024px) {
+@media (min-width: 988px) and (max-width: 1024px) {
   .skill-bars{
     max-width: 450px;
     transform: scale(0.8);
@@ -661,5 +786,22 @@ i {
 
   #skills h2 {
     max-width: calc(100% - 180px);
+  }
+
+  #work img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+}
+
+/* Skill Img Responsive Design */
+
+@media (max-width: 767px) {
+
+  .skillimg {
+    float: none;
+    margin: 0 10px 10px 0;
+    width: 330px;
+    vertical-align: none;
   }
 }
