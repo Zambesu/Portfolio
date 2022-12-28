@@ -61,6 +61,7 @@
   section h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    text-align: center;
   }
   
   section p {
@@ -424,6 +425,7 @@ i {
     max-width: calc(100% - 00px);
     left: 50%;
     right: 50%;
+    text-align: center;
   }
   
   #work img {
@@ -645,7 +647,7 @@ i {
   }
 }
 
-/*Surface Pro 7*/
+/*Nest Hub*/
 
 @media (min-width: 913px) and (max-width: 1024px) {
   .skill-bars{
