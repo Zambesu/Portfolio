@@ -10,6 +10,7 @@
     <header class="hidden">
       <nav>
         <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#work">Work</a></li>
@@ -22,7 +23,7 @@
             <main class="title">
                 <div class="title-text">
                   <h1>Hi, I'm <span class="highlight">Mateus</span>, and I'm a <br><span class="highlight">full-stack</span> developer</h1>
-              <h2>I specialize in building modern and user-friendly websites and applications</h2>              
+              <h2>And this is my Portfolio</h2>              
             </section>          
       <section id="about">
         <div class="arrow">
@@ -98,13 +99,13 @@
             <h3>PySnake</h3>
             <img src=pysnake.jpeg alt = PySnake>
             <p>The classical Snake Game, made in Python</p>
-            <a href="https://github.com/Zambesu/Snake-in-Pygame">View project</a>
+            <a href="pysnake/pysnake.html">View project</a>
           </li>
           <li>
             <h3>PySpace Invaders</h3>
             <img src = space_inv.png alt = PySpace>
             <p>A Space shooter game, made in python</p>
-            <a href="https://github.com/Zambesu/space_invaders">View project</a>
+            <a href="pyspace/pyspace.html">View project</a>
           </li>
         </ul>
       </section>
@@ -127,28 +128,7 @@
     <footer>
       <p>Copyright &copy; 2022 Mateus Rodrigues</p>
     </footer>
-    <script>
-      const header = document.querySelector('header');
-      let isHeaderHidden = true;
-      let lastScrollY = 0;
-      window.addEventListener('scroll', () => {
-        console.log('scroll event detected');
-        const scrollY = window.scrollY;    
-        if (scrollY > lastScrollY && !isHeaderHidden) {
-          console.log('hiding header');
-          header.classList.add('hidden');
-          header.classList.remove('visible');
-          isHeaderHidden = true;
-        }
-        else if (scrollY < lastScrollY && isHeaderHidden) {
-          console.log('showing header');
-          header.classList.add('visible');
-          header.classList.remove('hidden');
-          isHeaderHidden = false;
-        }
-        lastScrollY = scrollY;
-      });
-    </script>    
+    <script src="script.js"></script>    
   </body>
 </html>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
