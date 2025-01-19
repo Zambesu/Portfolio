@@ -273,6 +273,7 @@ i {
   color: #fff;
   background: #6665ee;
 }
+
 .skill-bars{
   float: right;
   padding: 25px 30px;
@@ -281,27 +282,46 @@ i {
   box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
   border-radius: 10px;
 }
+
+.skill-bars.in-view .bar .progress-line{
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.skill-bars.in-view .bar .info span{
+  opacity: 1;
+  animation: showText 0.5s 1s linear forwards;
+}
+
+.skill-bars.in-view .bar .progress-line span{
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
 .skill-bars .bar{
   margin: 20px 0;
   text-align: left;
 }
+
 .skill-bars .bar:first-child{
   margin-top: 0px;
 }
+
 .skill-bars .bar .info{
   margin-bottom: 5px;
 }
+
 .skill-bars .bar .info span{
   font-weight: 500;
   font-size: 17px;
   opacity: 0;
   animation: showText 0.5s 1s linear forwards;
 }
+
 @keyframes showText {
   100%{
     opacity: 1;
   }
 }
+
 .skill-bars .bar .progress-line{
   height: 10px;
   width: 100%;
@@ -312,13 +332,14 @@ i {
   border-radius: 10px;
   box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
               0 1px rgba(255,255,255,0.8);
-  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
 }
+
 @keyframes animate {
   100%{
     transform: scaleX(1);
   }
 }
+
 .bar .progress-line span{
   height: 100%;
   position: absolute;
@@ -328,24 +349,31 @@ i {
   background: #6665ee;
   animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
 }
+
 .bar .progress-line.cobol span{
   width: 90%;
 }
+
 .bar .progress-line.jcl span{
   width: 80%;
 }
+
 .bar .progress-line.sql span{
   width: 90%;
 }
+
 .bar .progress-line.natural span{
   width: 65%;
 }
+
 .bar .progress-line.tso span{
   width: 55%;
 }
+
 .bar .progress-line.zos span{
   width: 50%;
 }
+
 .progress-line span::before{
   position: absolute;
   content: "";
@@ -360,6 +388,7 @@ i {
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
+
 .progress-line span::after{
   position: absolute;
   top: -28px;
@@ -373,26 +402,33 @@ i {
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
+
 @keyframes showText2 {
   100%{
     opacity: 1;
   }
 }
+
 .progress-line.cobol span::after{
   content: "90%";
 }
+
 .progress-line.jcl span::after{
   content: "80%";
 }
+
 .progress-line.sql span::after{
   content: "90%";
 }
+
 .progress-line.natural span::after{
   content: "65%";
 }
+
 .progress-line.tso span::after{
   content: "55%";
 }
+
 .progress-line.zos span::after{
   content: "50%";
 }
