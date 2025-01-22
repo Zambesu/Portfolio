@@ -217,12 +217,9 @@ i {
   .arrow {
     width: 30px; 
     height: 30px; 
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 15px solid #fafafa;
+    top: 90%;
     position: absolute;
     vertical-align: text-bottom;
-    bottom: 100px;
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
@@ -486,14 +483,6 @@ i {
     width: 200px;
     float: none;
     margin: 0 0 20px 0;
-  }
-
-  .arrow {
-    text-align: center;
-    bottom: 90px;
-    left: 50%;
-    right: 50%;
-    vertical-align: text-bottom;
   }
 
   .arrow a {
